@@ -135,6 +135,7 @@ input[type="login"] {
   width: 85%;
   text-align: center;
   border-radius: 10PX;
+  min-width: 350px;
 }
 
 .spacer-vertical {
@@ -169,6 +170,8 @@ input[type="login"] {
   padding-right: 5px;
   padding-bottom: 30px;
   border-radius: 10PX;
+  min-width: 300px;
+
 }
 
 
@@ -255,6 +258,22 @@ input[type="login"] {
   text-overflow: clip;
 }
 
+.image-fit {
+  border-radius: 10px;
+  height: 80px;
+  width: 100px;
+  display: inline;
+}
+
+.img-container {
+  height: 0%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: flex;
+  /* background-color: RED; */
+}
+
 .btn-add-item {
   border-radius: 7px;
   width: 20%;
@@ -267,6 +286,25 @@ input[type="login"] {
   font-weight: 500;
   border: none;
   margin-top: 30px;
+}
+.btn-add-item:hover{
+  cursor:pointer;
+}
+
+.btn-add-cart {
+  background-color: #fefefe;
+  border: none;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
 }
 
 .dot:hover{
@@ -284,6 +322,106 @@ input[type="login"] {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5px;
+  height: 250px;
+  max-height: 200px;
+  min-width: 300px;
+  max-width: 500px;
+  overflow:visible;
+}
+
+.shop-filter-box {
+  width: 80%;
+  background-color: #e2e2e2;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  height: 200px;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.shop-item-title {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  padding-right: 20px;
+  padding-left: 100px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.entry {
+  width: 100px;
+  border: none;
+  background: none;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+}
+.table-filter {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
+}
+
+.search-box {
+  border-radius: 7px;
+  width: 100px;
+  font-size: 12px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 10px;
+  margin-top: 5px;
+  text-align: left;
+  border: none;
+  margin-right: auto;
+
+  background-color:#ffffff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.shop-filter-criteria {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200;
+  padding-right: auto;
+  padding-left: 10px;
+  text-align:center;
+  font-size: 12px;
+  max-height: 20px;
+  line-height: 14px;
+}
+
+.shop-item-desc {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200;
+  padding-right: 10px;
+  padding-left: 120px;
+  text-align:left;
+  font-size: 12px;
+  max-height: 20px;
+  line-height: 14px;
+}
+
+.shop-item-section-rating {
+  text-align: left;
+  margin-left: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.shop-item-section-title {
+  text-align: left;
+  margin-left: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.item-info {
+  padding-bottom: 45px;;
 }
 
 
