@@ -1,0 +1,335 @@
+body {
+  background-color: rgb(232, 238, 240);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Colombo", sans-serif;
+  font-size: 70px;
+  line-height: 100px;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 25px;
+}
+
+.item-creator {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 27px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+  line-height: 70px;
+}
+
+.subtext {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 200;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0%;
+  line-height: 20px;
+}
+
+a {
+  padding-top: 15px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: small;
+  font-family: "Roboto Mono", monospace;
+}
+
+table {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  /* width: 50%;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-gap: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: medium;
+  font-family: "Colombo", sans-serif;
+}
+
+input {
+  font-family: "Colombo", sans-serif;
+  font-size: inherit;
+}
+
+/* input[type="text"] {
+  display: block;
+} */
+
+button[type="submit"] {
+  padding: 5px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgb(0, 162, 255);
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace;
+}
+
+input[type="password"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+input[type="email"] {
+  display: block;
+}
+
+input[type="radio"] {
+  align-self: center;
+}
+
+input[type="login"] {
+  background-color: rgb(0, 162, 255);
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Colombo", sans-serif;
+}
+
+.box-top-center {
+  display: block;
+  background-color: #292929;
+  justify-self: center;
+  text-align: center;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-container-mid {
+  text-align: center;
+  justify-content: center;
+  line-height: 60px;
+  font-size: large;
+  color: #fefefe;
+}
+
+.input-content {
+  margin-top: 10px;
+  background-color: #292929;
+  margin: auto;
+  width: 85%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.spacer-vertical {
+  height: 30px;
+}
+.input-site {
+  background-color: #1f1f1f;
+}
+
+/* Input data is used for the 'new item' section */
+.input-data {
+  display: inline-block;
+  background-color: #fefefe;
+  width: 80%;
+  max-width: 500px;
+  min-width: 200px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+/* This (below) is used for the shop view section */
+.shop-container {
+  display: inline-block;
+  background-color: #fefefe;
+  width: 90%;
+  max-width: 900px;
+  min-width: 200px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+.input-text {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.menu-text {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: left;
+  margin-left: 10px;
+  color: black;
+}
+
+.red-dot {
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+  background-color: #ff4747;
+  display: inline-block;
+  margin: 3px;
+}
+.yellow-dot {
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+  background-color: orange;
+  display: inline-block;
+  margin: 3px;
+}
+.green-dot {
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  display: inline-block;
+  margin: 3px;
+}
+.dots {
+  display: flex;
+  background-color: #e2e2e2;
+
+  padding: 10px;
+  border-radius: 5px;
+}
+.width-modifier-90 {
+  width: 90%;
+}
+
+.rounded-input-small {
+  border-radius: 7px;
+  width: 20%;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  padding: 5px;
+  background-color: #e2e2e2;
+  font-family: "Roboto Mono", monospace;
+}
+.rounded-input-large {
+  border-radius: 7px;
+  width: 50%;
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  background-color: #e2e2e2;
+  font-family: "Roboto Mono", monospace;
+}
+.input-tall {
+  height: 50px;
+  text-overflow: clip;
+}
+
+.btn-add-item {
+  border-radius: 7px;
+  width: 20%;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  border: none;
+  margin-top: 30px;
+}
+
+.dot:hover {
+  width: 20px;
+}
+
+.clickable-box {
+  width: 100%;
+  height: 100%;
+}
+
+.shop-item-box {
+  width: 80%;
+  background-color: #e2e2e2;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+img {
+  width: 50px;
+}
+
+.checkout-container {
+  text-align: right;
+  padding: 12px;
+}
+
+.quantity {
+  width: 50px;
+}
+
+.cart {
+  font-family: "Roboto Mono", monospace;
+}
