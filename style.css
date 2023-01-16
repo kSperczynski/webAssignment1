@@ -17,7 +17,7 @@ h2 {
 }
 
 .item-creator {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 27px;
   text-align: center;
@@ -28,7 +28,7 @@ h2 {
 }
 
 .subtext {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 200;
   font-size: 16px;
   text-align: center;
@@ -140,6 +140,7 @@ input[type="login"] {
   line-height: 60px;
   font-size: large;
   color: #fefefe;
+  
 }
 
 .input-content {
@@ -148,7 +149,8 @@ input[type="login"] {
   margin: auto;
   width: 85%;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 10PX;
+  min-width: 350px;
 }
 
 .spacer-vertical {
@@ -182,11 +184,15 @@ input[type="login"] {
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 30px;
-  border-radius: 10px;
+  border-radius: 10PX;
+  min-width: 300px;
+
 }
 
+
+
 .input-text {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 300;
   font-size: 20px;
   text-align: center;
@@ -195,7 +201,7 @@ input[type="login"] {
 }
 
 .menu-text {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 13px;
   text-align: left;
@@ -210,6 +216,7 @@ input[type="login"] {
   background-color: #ff4747;
   display: inline-block;
   margin: 3px;
+  
 }
 .yellow-dot {
   border-radius: 5px;
@@ -223,12 +230,13 @@ input[type="login"] {
   border-radius: 5px;
   height: 10px;
   width: 10px;
-  background-color: green;
+  background-color: green; 
   display: inline-block;
   margin: 3px;
+
 }
 .dots {
-  display: flex;
+  display:flex;
   background-color: #e2e2e2;
 
   padding: 10px;
@@ -246,7 +254,7 @@ input[type="login"] {
   border: none;
   padding: 5px;
   background-color: #e2e2e2;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 .rounded-input-large {
   border-radius: 7px;
@@ -256,11 +264,27 @@ input[type="login"] {
   text-align: center;
   border: none;
   background-color: #e2e2e2;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 .input-tall {
   height: 50px;
   text-overflow: clip;
+}
+
+.image-fit {
+  border-radius: 10px;
+  height: 80px;
+  width: 100px;
+  display: inline;
+}
+
+.img-container {
+  height: 0%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: flex;
+  /* background-color: RED; */
 }
 
 .btn-add-item {
@@ -271,13 +295,32 @@ input[type="login"] {
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 500;
   border: none;
   margin-top: 30px;
 }
+.btn-add-item:hover{
+  cursor:pointer;
+}
 
-.dot:hover {
+.btn-add-cart {
+  background-color: #fefefe;
+  border: none;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+.dot:hover{
   width: 20px;
 }
 
@@ -292,7 +335,109 @@ input[type="login"] {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5px;
+  height: 250px;
+  max-height: 200px;
+  min-width: 300px;
+  max-width: 500px;
+  overflow:visible;
 }
+
+.shop-filter-box {
+  width: 80%;
+  background-color: #e2e2e2;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  height: 200px;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.shop-item-title {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  padding-right: 20px;
+  padding-left: 100px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.entry {
+  width: 100px;
+  border: none;
+  background: none;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+}
+.table-filter {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
+}
+
+.search-box {
+  border-radius: 7px;
+  width: 100px;
+  font-size: 12px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 10px;
+  margin-top: 5px;
+  text-align: left;
+  border: none;
+  margin-right: auto;
+
+  background-color:#ffffff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.shop-filter-criteria {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200;
+  padding-right: auto;
+  padding-left: 10px;
+  text-align:center;
+  font-size: 12px;
+  max-height: 20px;
+  line-height: 14px;
+}
+
+.shop-item-desc {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200;
+  padding-right: 10px;
+  padding-left: 120px;
+  text-align:left;
+  font-size: 12px;
+  max-height: 20px;
+  line-height: 14px;
+}
+
+.shop-item-section-rating {
+  text-align: left;
+  margin-left: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.shop-item-section-title {
+  text-align: left;
+  margin-left: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.item-info {
+  padding-bottom: 45px;;
+}
+
+
 
 .login-container {
   display: flex;
