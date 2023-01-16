@@ -37,11 +37,12 @@ h2 {
 }
 
 a {
+  padding-top: 15px;
   display: block;
   margin: 0 auto;
   text-align: center;
-  font-size: large;
-  font-family: "Colombo", sans-serif;
+  font-size: small;
+  font-family: "Roboto Mono", monospace;
 }
 
 table {
@@ -78,8 +79,23 @@ input {
   display: block;
 } */
 
+button[type="submit"] {
+  padding: 5px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgb(0, 162, 255);
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace;
+}
+
 input[type="password"] {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 input[type="email"] {
@@ -104,7 +120,6 @@ input[type="login"] {
   border-radius: 10px;
   font-family: "Colombo", sans-serif;
 }
-
 
 .box-top-center {
   display: block;
@@ -156,7 +171,7 @@ input[type="login"] {
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 30px;
-  border-radius: 10PX;
+  border-radius: 10px;
 }
 /* This (below) is used for the shop view section */
 .shop-container {
@@ -192,7 +207,6 @@ input[type="login"] {
   text-align: left;
   margin-left: 10px;
   color: black;
-
 }
 
 .red-dot {
@@ -211,7 +225,6 @@ input[type="login"] {
   background-color: orange;
   display: inline-block;
   margin: 3px;
-
 }
 .green-dot {
   border-radius: 5px;
@@ -291,13 +304,13 @@ input[type="login"] {
   cursor:pointer;
 }
 
-.btn-add-cart {
+.btn-filter {
   background-color: #fefefe;
   border: none;
   vertical-align: middle;
   margin-top: auto;
   margin-bottom: auto;
-  height: 30px;
+  height: 20px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 7px;
@@ -305,6 +318,24 @@ input[type="login"] {
   margin-left: 30px;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
+}
+
+.btn-add-cart {
+  height: 20px;
+  width: 110px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: -3px;
+  margin-left: 3px;
+  cursor:pointer;
+}
+
+.btn-add-item-link {
+  margin-top: 5px;
+  padding-top: 5;
+  width: 180px;
+  background-color: #292929;
+  color: #fefefe;
 }
 
 .dot:hover{
@@ -339,6 +370,19 @@ input[type="login"] {
   margin-right: auto;
   border-radius: 5px;
   height: 200px;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.shop-add-item-box {
+  width: 80%;
+  background-color: #e2e2e2;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  height: 50px;;
   max-width: 500px;
   min-width: 300px;
 }
@@ -456,4 +500,12 @@ img {
 .checkout-container {
   text-align: right;
   padding: 12px;
+}
+
+.quantity {
+  width: 50px;
+}
+
+.cart {
+  font-family: "Roboto Mono", monospace;
 }

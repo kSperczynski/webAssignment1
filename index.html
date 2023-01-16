@@ -5,49 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+    </style>
     <title>Login</title>
   </head>
-  <body>
-    <h1>The Shop</h1>
-    <h2>Where your journey starts.</h2>
-    <form action="/login" method="post">
-      <table>
-        <tr>
-          <td>
-            <label for="username">Username</label>
-          </td>
-          <td>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              placeholder="username"
-            />
-          </td>
-        </tr>
+  <body class="input-site">
+    <div class="box-top-center">
+      <div class="text-container-mid">
+        <p class="item-creator">The Theta Shop</p>
+        <p class="subtext">Please log in</p>
+      </div>
+    </div>
+
+    <div class="input-content">
+      <div class="spacer-vertical"></div>
+      <div class="input-data">
+        <div class="dots">
+          <div class="red-dot dot">
+            <a class="clickable-box" href="./index.html"></a>
+          </div>
+          <div class="yellow-dot dot">
+            <a class="clickable-box" href="./add-item.html"></a>
+          </div>
+          <div class="green-dot dot">
+            <a class="clickable-box" href="./shop.html"></a>
+          </div>
+          <div class="menu-text">Login</div>
+        </div>
+        <p class="input-text">Username</p>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="username"
+          class="rounded-input-large"
+        />
         <br />
-        <tr>
-          <td>
-            <label for="password">Password</label>
-          </td>
-          <td>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="password"
-            />
-          </td>
-          <br />
-          </tr>
-        <tr>
-          <td colspan="2">
-            <input type="login" value="Log in" />
-          </td>
-        </tr>
-        </tr>
-      </table>
-    </form>
-    <a href="signup.html">Sign up</a>
+        <p class="input-text">Password</p>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="password"
+          class="rounded-input-small"
+        />
+        <br />
+        <a href="shop.html">
+          <button type="submit">Login</button>
+        </a>
+        <a href="signup.html">Sign up</a>
+      </div>
+      <div class="spacer-vertical"></div>
+    </div>
   </body>
 </html>
